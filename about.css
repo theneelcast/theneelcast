@@ -1,0 +1,161 @@
+/* Styling for the body background and navigation*/
+*{
+	font-family: arial;
+}
+
+body{
+	background-image: linear-gradient(to left, #ff3b20, #3b20ff);
+}
+
+.header{
+	background: rgba(255, 0, 138, 0.3);
+}
+
+nav{
+	width: 90%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	display: flex;
+	align-items: right;
+	margin-bottom: 0px;
+}
+
+.logo{
+	flex: 10%;
+	padding-top:5px;
+}
+
+@keyframes myLogo{
+	from{
+		width: 50px;
+		height: 50px;
+		border-radius: 10px;
+		box-shadow: 0 5px 10px 0;
+	}
+	to{
+		
+		width: 80px;
+		height: 80px;
+		border-radius: 10px;
+		box-shadow: 0 5px 10px 0;
+	}
+}
+
+.logo > img{
+	animation-name: myLogo;
+	animation-duration: 2s;
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px 0;
+}
+
+#title{
+	font-size: 24px;
+	color: #ffffff;
+	padding-left: 5%;
+	margin: 0px;
+	text-shadow: 2px 2px 2px #000000;
+	
+}
+
+#slogan{
+	color: #ffffff;
+	padding-left: 5%;
+	margin: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+	padding: 0px;
+}
+
+.nav-links a{
+	color: white;
+	text-decoration: none;
+}
+
+.nav-links a:hover{
+	color: #ff3b20;
+}
+
+.nav-links ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links > ul > li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px;
+	padding-top: 5px;
+}
+
+/* Styling for the main content*/
+.about{
+	width: 90%;
+	padding-left: 5%;
+	color: #ffffff;
+}
+
+.about > ul > li{
+	margin: 15px;
+}
+
+.about ul{
+	list-style-type: none;
+}
+
+.about a{
+	text-decoration: none;
+	color: #fffc00;
+	font-weight: bold;
+}
+
+.about a:hover{
+	color: #ff3b20;
+	cursor: pointer;
+}
+
+span{
+	font-weight: bold;
+}
+
+/* Styling for the footer*/
+.footer{
+	position: fixed;
+	background: rgba(255, 0, 138, 0.6);
+	color: #ffffff;
+	bottom: 0;
+	left: 1%;
+	right: 1%;
+	padding: 2px;
+	padding-left: 10px;
+	margin-bottom: 0;
+	text-align-last: left;
+	float: middle;
+}
+
+@media only screen and (max-width: 650px){
+	
+	.nav-links > ul > li{
+	float: left;
+	width: 40%;
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px;
+	padding-top: 5px;
+	}
+	
+	.about{
+		padding-bottom: 40px;
+	}
+}
